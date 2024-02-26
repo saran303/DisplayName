@@ -10,10 +10,10 @@ const App = () => {
     setIsSubmitted(!isSubmitted)
 
     // Check if both first name and last name are provided
-    if (firstName.trim() === '' || lastName.trim() === '') {
-      alert('Both First Name and Last Name are required.');
-      return;
-    }
+    // if (firstName.trim() === '' || lastName.trim() === '') {
+    //   alert('Both First Name and Last Name are required.');
+    //   return;
+    // }
 
     // Your logic to handle form submission or other actions
     // For example, you can send the form data to a server or update state
