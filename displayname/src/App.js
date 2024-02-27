@@ -43,7 +43,7 @@ const App = () => {
         <br />
         <button type="submit">Submit</button>
       </form>
-      <p>{isSubmitted && `Full Name: ${firstName} ${lastName}`}</p>
+      {isSubmitted && <p>`Full Name: ${firstName} ${lastName}`</p>}
     </div>
   );
 };
