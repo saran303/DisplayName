@@ -4,10 +4,13 @@ const App = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const[isSubmitted, setIsSubmitted] = useState(false)
+  const[fullName, setFullName] = useState('')
 
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
     setIsSubmitted(!isSubmitted)
+
+    setFullName(firstName+" "+lastName);
 
     // Check if both first name and last name are provided
     // if (firstName.trim() === '' || lastName.trim() === '') {
@@ -43,7 +46,7 @@ const App = () => {
         <br />
         <button type="submit">Submit</button>
       </form>
-      {isSubmitted && <p>`Full Name: ${firstName} ${lastName}`</p>}
+      {isSubmitted && <div>{`Full Name: ${fullName}`}</div>}
     </div>
   );
 };
