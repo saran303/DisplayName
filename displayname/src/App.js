@@ -31,14 +31,14 @@ const App = () => {
     <div>
       <h1>Full Name Display</h1>
       <form onSubmit={handleSubmit}>
-        <label>
+        <label >
           First Name:
-          <input type="text" value={firstName} onChange={handleFirstNameChange} required />
+          <input type="text" name='firstName' id='firstName' value={firstName} onChange={handleFirstNameChange} required />
         </label>
         <br />
         <label>
           Last Name:
-          <input type="text" value={lastName} onChange={handleLastNameChange} required />
+          <input type="text" name='lastName' id='lastName' value={lastName} onChange={handleLastNameChange} required />
         </label>
         <br />
         <button type="submit">Submit</button>
